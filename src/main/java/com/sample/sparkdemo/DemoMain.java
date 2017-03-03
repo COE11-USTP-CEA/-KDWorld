@@ -17,5 +17,25 @@ public class DemoMain {
             model.put("title","KDWORLD");
             return new ModelAndView(model, "index.ftl"); // located in src/test/resources/spark/template/freemarker
         }, new FreeMarkerEngine());
+
+
+        get("/add", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            model.put("add", "Add Songs");
+            return new ModelAndView(model, "add.ftl");
+        }, new FreeMarkerEngine());
+
+
+     post("/add", (req,res) -> {
+                String song,artist;
+
+                song = req.queryParams("songname");
+                artist = req.queryParams("artistname");
+            
+            Map<String, Object> model = new HashMap<>();
+            model.put("song", song);
+            model.put("artist", artist);
+            return new ModelAndView(model, "success.ftl");
+        }, new FreeMarkerEngine());
     }
 }
