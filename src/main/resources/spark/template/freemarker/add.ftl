@@ -5,7 +5,7 @@
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   
-  <title>${add}</title>
+  <title>Add item</title>
 
 </head>
 <body>
@@ -23,11 +23,11 @@
 <form method = "post" action="/add">
   <div class="form-group">
     <label for="exampleInputItem1">Name of Song</label>
-    <input type="nameofitem" name="songname" class="form-control" id="InputItemName" placeholder="Item">
+    <input type="nameofitem" name="song" class="form-control" id="InputItemName" placeholder="Item">
   </div>
   <div class="form-group">
     <label for="exampleInputDetails1">Name of Artist</label>
-    <input type="details" name="artistname" class="form-control" id="InputItemDetails" placeholder="Details">
+    <input type="details" name="artist" class="form-control" id="InputItemDetails" placeholder="Details">
   </div>
  
   <button type="submit" class="btn btn-default">
