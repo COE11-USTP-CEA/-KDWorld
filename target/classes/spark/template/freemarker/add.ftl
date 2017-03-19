@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
- 
+<style>
+  body {
+    background-image: url("http://www.animateit.net/data/media/nov2011/7f41ca2dc0ff.gif");
+  }
+</style> 
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   
-  <title>Add item</title>
+  <title>${forms}</title>
+
 
 </head>
 <body>
 
 <div class="text-center">
-<h1>Add a Song</h1>
+<h1><font color="white">ADD SONG</h1>
 </div>
 
 
@@ -22,12 +27,12 @@
 
 <form method = "post" action="/add">
   <div class="form-group">
-    <label for="exampleInputItem1">Name of Song</label>
-    <input type="nameofitem" name="song" class="form-control" id="InputItemName" placeholder="Item">
+    <label for="exampleInputItem1">Name of Song</label><font color="white">
+    <input type="name" name="name" class="form-control" id="song_name" placeholder="Song">
   </div>
   <div class="form-group">
-    <label for="exampleInputDetails1">Name of Artist</label>
-    <input type="details" name="artist" class="form-control" id="InputItemDetails" placeholder="Details">
+    <label for="exampleInputDetails1">Name of Artist</label><font color="white">
+    <input type="artist" name="artist" class="form-control" id="InputItemDetails" placeholder="Artist">
   </div>
  
   <button type="submit" class="btn btn-default">
@@ -35,8 +40,8 @@
   </button>
 </form>
 
-<button type="submit" class="btn btn-default">
-    <a href="/index">
+<button type="btn-default" class="btn btn-default">
+    <a href="/">
         Back to Homepage
       </a>
   </button>

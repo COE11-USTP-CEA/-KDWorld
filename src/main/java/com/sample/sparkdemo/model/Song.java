@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class Song{
 
-    String name, artist;
+    public String name, artist;
 
     public void setName(String name){
         this.name = name;

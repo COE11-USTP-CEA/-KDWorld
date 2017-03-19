@@ -11,7 +11,8 @@
 <body>
 
 <div class="text-center">
-<h1>Item info</h1>
+<h1>Song Information</h1>
+<h1>${song}</h1>
 </div>
 
 
@@ -19,17 +20,23 @@
   <div class="col-md-4"></div>
   <div class="col-md-4">
     
-<h2>Song: ${song}</h2>
-<h2>Artist: ${artist}</h2>
+<h2>Song: ${song.name}</h2>
+<h2>Artist: ${song.artist}</h2>
 
 
 <div class="btn-group" role="group" aria-label="...">
   
   	<button type="button" class="btn btn-default">
-  		<a href="/index">
+  		<a href="/">
   			Back to Homepage
   		</a>
   	</button>
+
+    <button type="button" class="btn btn-default">
+      <a href="/list">
+        View Playlist
+      </a>
+    </button>
 </div>
 
 

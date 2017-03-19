@@ -16,28 +16,24 @@ public class Playlist {
 
     }
 
-    public Song deleteSong(String code){
-        for (Song song : playlist){
-            if(code.equals(song.name)){
-
-            playlist.remove(song);
-            
-          }
-
-    };
-  return null;
-
-} 
+    public Song deleteSong(String name){
+        for (Song song : playlist ) {
+            if ( name.equals(song.name)) {
+                playlist.remove(song);
+                return null;
+            }
+        };
+        return null;
+    }
 
 
-    public Song findSong(String code){
-        for (Song song : playlist){
-            if(code.equals(song.name)){
-                
+   public Song findSong(String name){
+        for (Song song : playlist ) {
+            if (name.equals(song.name) ) {
                 return song;
             }
-    };
-    return null;
-}
+        };
+        return null;
+    }
 
 }
