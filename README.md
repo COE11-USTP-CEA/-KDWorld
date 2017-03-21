@@ -43,4 +43,3 @@ Devirose Obligado
 Whillien Ghae Caturan
 Kimberly Kane Migrino
 Vince Nikolai Reycitez
-Jose Stephen Peña
