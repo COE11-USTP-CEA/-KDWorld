@@ -25,7 +25,7 @@
 <div class="btn-group" role="group" aria-label="...">
   
   	<button type="button" class="btn btn-default">
-  		<a href="/index">
+  		<a href="/">
   			Back to Homepage
   		</a>
   	</button>

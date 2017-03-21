@@ -12,7 +12,7 @@ public class DemoMain {
     public static void main(String[] args) {
         staticFiles.location("/css"); // Static files
         
-        get("/index", (req, res) -> {
+        get("/", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
             model.put("title","KDWORLD");
             return new ModelAndView(model, "index.ftl"); // located in src/test/resources/spark/template/freemarker

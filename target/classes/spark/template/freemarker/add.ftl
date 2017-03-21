@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
  
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -9,6 +10,11 @@
 
 </head>
 <body>
+
+
+}
+</style>
+
 
 <div class="text-center">
 <h1>Add a Song</h1>
@@ -22,12 +28,12 @@
 
 <form method = "post" action="/add">
   <div class="form-group">
-    <label for="exampleInputItem1">Name of Song</label>
-    <input type="nameofitem" name="songname" class="form-control" id="InputItemName" placeholder="Item">
+    <label for="exampleInputSong1">Name of Song</label>
+    <input type="nameofsong" name="songname" class="form-control" id="InputSongName" placeholder="Song">
   </div>
   <div class="form-group">
-    <label for="exampleInputDetails1">Name of Artist</label>
-    <input type="details" name="artistname" class="form-control" id="InputItemDetails" placeholder="Details">
+    <label for="exampleInputArtists1">Name of Artist</label>
+    <input type="artist" name="artistname" class="form-control" id="InputArtistName" placeholder="Artist">
   </div>
  
   <button type="submit" class="btn btn-default">
