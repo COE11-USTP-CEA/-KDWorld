@@ -21,11 +21,7 @@ public class DemoMain {
 
         Playlist playlist = new Playlist();
         
-<<<<<<< HEAD
-=======
 
-         
->>>>>>> 3d56b69a2b8dee037a0c4d699bb494e0b3b352aa
         get("/", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
             
