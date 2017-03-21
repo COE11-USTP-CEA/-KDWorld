@@ -95,16 +95,28 @@ public class DemoMain {
 
 
 
-        // get("/edit/:code", (request, response) -> {
-        //     Map<String, Object> model = new HashMap<>();
-        //     String code = request.params(":code");
-        //     Item item = inventory.findItemByCode(code);
+        get("/edit/:name", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            String name = request.params(":name");
+            Song song = playlist.findSong(name);
             
-        //     model.put("title", "Edit Item");
-        //     model.put("item_code", item.code());
-        //     model.put("item_name", item.name());
-        //     return render(model, "edit.ftl");
-        // });
+            model.put("title", "Edit name");
+            model.put("song", song);
+            return render(model, "edit.ftl");
+        });
+
+        post("/edit", (request,response) -> {
+            Map<String, Object> model = new HashMap<>();
+            String name = request.queryParams("name");
+            String artist = request.queryParams("artist");
+
+            Song song = playlist.updateSong(artist,name);
+
+
+            model.put("title", "Song Updated");
+            model.put("song", song);
+            return render(model, "list.ftl");
+        });
 
 
         get("/show/:name", (request, response) -> {

@@ -12,7 +12,6 @@
 
 <div class="text-center">
 <h1>Song Information</h1>
-<h1>${song}</h1>
 </div>
 
 

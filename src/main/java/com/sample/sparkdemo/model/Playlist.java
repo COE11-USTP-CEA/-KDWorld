@@ -16,6 +16,16 @@ public class Playlist {
 
     }
 
+    public Song updateSong(String name, String artist){
+        for (Song song : playlist ) {
+            if ( name.equals(song.name)) {
+                song.setName(name);
+                return song;
+            }
+        };
+        return null;
+    }
+
     public Song deleteSong(String name){
         for (Song song : playlist ) {
             if ( name.equals(song.name)) {

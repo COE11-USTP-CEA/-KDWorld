@@ -49,6 +49,13 @@
   							Delete
   							</a>
   							</button>
+
+								<button type="button" class="btn btn-default"><a href="/edit/${song.name}">
+  								
+  							Edit
+  							</a>
+  							</button>
+
 					</td>
 				</tr>
 
